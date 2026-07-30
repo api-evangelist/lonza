@@ -1,8 +1,14 @@
 aid: lonza
 name: Lonza
-description: 'Lonza is a company surfaced as a portfolio company of norwest-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Lonza Group is a Swiss multinational contract development and manufacturing organization
+  (CDMO) serving the pharmaceutical, biotech, and nutrition industries. Headquartered in Basel, Switzerland,
+  Lonza develops and manufactures active pharmaceutical ingredients (APIs), biologics, cell and gene
+  therapies, and drug products for customers worldwide. Note: within Lonza''s domain, "API" refers to
+  Active Pharmaceutical Ingredient (a chemical/biologic substance), not a software/web API. Lonza
+  publishes no public developer portal, REST/GraphQL API, OpenAPI specification, or machine-readable
+  API surface. This profile was surfaced as a portfolio-adjacent lead and enriched; the honest result
+  of the enrichment pass is that Lonza has no software API surface to catalog. The only machine-derived
+  artifact is a domain-security probe of lonza.com.'
 url: https://raw.githubusercontent.com/api-evangelist/lonza/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,29 @@ x-backed-by:
 - norwest-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
-- Unknown
+- Pharmaceutical
+- Biotech
+- CDMO
+- Manufacturing
+- Life Sciences
+- Healthcare
+image: https://www.lonza.com/-/media/images/lonza/logo/lonza-logo.png
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +46,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/lonza-domain-security.yml
 - type: Website
   url: https://lonza.com
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
